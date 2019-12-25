@@ -16,6 +16,5 @@ $(document).ready(function() {
   // Intro Text
   $(".text-hover").mouseenter(function() {
     $(this).toggleClass("blink-1");
-    console.log("working");
   });
 });

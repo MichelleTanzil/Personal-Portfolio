@@ -85,7 +85,9 @@ $(document).ready(function() {
 
   // Start the typing effect on load
   _INTERVAL_VAL = setInterval(Type, 125);
+  // Collapsible heading
   var coll = document.getElementsByClassName("collapsible");
+
   var i;
 
   for (i = 0; i < coll.length; i++) {
@@ -94,9 +96,11 @@ $(document).ready(function() {
       var content = this.nextElementSibling;
       if (content.style.display === "flex") {
         content.style.display = "none";
+
         this.style.backgroundColor = "#0c0c18";
       } else {
         content.style.display = "flex";
+
         this.style.backgroundColor = "#5b9ed9";
       }
     });
