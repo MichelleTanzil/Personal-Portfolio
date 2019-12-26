@@ -474,11 +474,11 @@ body {
   footer {
     width: 100%;
     position: fixed;
-    left: 0;
-    bottom: 10px;
+    left: 2%;
+    top: 9%;
   }
   .icons {
-    height: 50px;
+    height: 40px;
   }
 }
 /* Tablet */
@@ -534,18 +534,10 @@ body {
     font-size: 120px;
   }
   footer {
-    position: fixed;
-    left: 74%;
-    bottom: 25%;
-  }
-  .icons {
-    height: 50px;
-  }
-  footer {
     width: 100%;
     position: fixed;
-    left: 0;
-    bottom: 10px;
+    left: 2%;
+    top: 9%;
   }
   .icons {
     height: 50px;
@@ -626,10 +618,10 @@ body {
   footer {
     width: 100%;
     position: fixed;
-    left: 0;
-    bottom: 10px;
+    left: 2%;
+    top: 9%;
   }
   .icons {
-    height: 85px;
+    height: 60px;
   }
 }

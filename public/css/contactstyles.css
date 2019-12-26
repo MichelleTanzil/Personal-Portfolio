@@ -12,15 +12,10 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: "Noto Sans", sans-serif;
-  overflow: auto;
+  overflow: scroll;
   justify-content: center;
   align-items: center;
-}
-.enter {
-  text-decoration: none;
-  margin: auto;
-  color: white;
-  font-size: 50px;
+  min-height: 100vh;
 }
 
 /* Nav Bar */
@@ -141,21 +136,19 @@ body {
   }
 
   .toggle-nav:hover,
-  .toggle-nav.active {
+  .toggle-nav.active1 {
     text-decoration: none;
     color: #b7dcd8;
     font-family: "Noto Sans", sans-serif;
   }
 }
-
 /* Initials Logo */
 #initialsOne {
+  /* background: -webkit-linear-gradient(#e96443, #904e95); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   text-align: center;
-  font-size: 200px;
-  height: 100%;
   text-shadow: 1px 1px 1px #00d4d4, 1px 2px 1px #00d4d4, 1px 3px 1px #00d4d4,
     1px 4px 1px #00d4d4, 1px 5px 1px #00d4d4, 1px 6px 1px #f62459,
     1px 7px 1px #f62459, 1px 8px 1px #f62459, 1px 9px 1px #f62459,
@@ -208,102 +201,132 @@ body {
 #wrapper {
   line-height: 70px;
   padding: 0;
-  margin: 13% 0 3% 0;
+  margin: 3% 0 3% 0;
   vertical-align: top;
 }
-.text {
-  color: #5b9ed9;
-  letter-spacing: 0.0625em;
-  word-wrap: break-word;
-  font-weight: 800;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-.intro {
-  text-align: right;
-  letter-spacing: normal;
-}
-.spacing {
-  padding: 5px;
-}
-.initials {
+/* Contact Me Form */
+label {
   color: #00d4d4;
-  text-shadow: 1px 1px 1px #00d4d4, 1px 2px 1px #00d4d4, 1px 3px 1px #00d4d4,
-    1px 4px 1px #00d4d4, 1px 5px 1px #00d4d4, 1px 6px 1px #f62459,
-    1px 7px 1px #f62459, 1px 8px 1px #f62459, 1px 9px 1px #f62459,
-    1px 10px 1px #f62459, 1px 18px 6px rgba(16, 16, 16, 0.4),
-    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
-    1px 30px 60px rgba(16, 16, 16, 0.4);
-  font-size: 100px;
+}
+input[type="text"],
+input[type="email"] {
+  color: #355c7d;
 }
 
-/* Projects */
-.container {
+form {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Noto Sans", sans-serif;
 }
-.collapsible {
-  background-color: #0c0c18;
-  cursor: pointer;
-  width: 100%;
+input {
+  border-radius: 3px;
   border: none;
-  text-align: left;
   outline: none;
 }
-.heading {
-  font-family: "Pacifico", cursive;
-  color: #355c7d;
-  text-align: center;
+input:focus {
+  border-bottom: 3px solid #3c3c57;
 }
-.text {
-  font-family: "Roboto", sans-serif;
-  border-radius: 2px;
-  color: #5ba5e6;
-  margin-bottom: 5%;
-  display: none;
-  background-color: rgba(0, 0, 0, 0.5);
+textarea {
+  border: none;
+  outline: none;
+  color: #355c7d;
+  border-radius: 3px;
+}
+/* Btn - About Me */
+
+.brk-btn {
+  position: relative;
+  background: none;
+  color: aqua;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid aqua;
+  padding: 0.5em 1em;
+}
+.brk-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  right: 20%;
+  top: -0.21em;
+  transform: skewX(-45deg);
+  -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  left: 20%;
+  bottom: -0.25em;
+  transform: skewX(45deg);
+  -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn:hover::before {
+  right: 80%;
+}
+.brk-btn:hover::after {
+  left: 80%;
 }
 /* Responsive */
 /* Mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #wrapper {
-    margin: 7% 0;
+    margin: 5% 0;
   }
   #initialsOne {
-    font-size: 60px;
-  }
-  .container {
-    flex-direction: column;
-  }
-  .projects video {
-    width: 90%;
-    height: 185px;
-    margin: 2% 5%;
-    display: none;
-  }
-  .collapsible {
-    padding: 5px;
-    font-size: 20px;
+    font-size: 100px;
     margin-bottom: 5%;
   }
-  .collapsible span {
-    float: right;
-    margin-right: 10px;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15%;
   }
-  .text {
+  .brk-btn {
+    font-size: 15px;
+  }
+  form {
+    font-size: 15px;
+    margin-top: 15%;
+  }
+  input {
+    line-height: 32px;
+    padding: 5px 50px 5px 10px;
+    margin-bottom: 3%;
+  }
+  input[type="text"],
+  input[type="email"] {
     font-size: 13px;
-    width: 90%;
-    margin: 3% auto;
-    line-height: 1.5;
-    padding: 3%;
   }
-    footer {
+  textarea {
+    height: 100px;
+    width: 228px;
+    margin-bottom: 3%;
+    font-size: 13px;
+    padding: 5px 0 5px 10px;
+  }
+  label {
+    line-height: 1.5em;
+    text-align: center;
+  }
+  footer {
     width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 10px;
+    position: fixed;
+    left: 2%;
+    top: 9%;
   }
   .icons {
-    height: 50px;
+    height: 40px;
   }
 }
 /* Tablet */
@@ -312,173 +335,100 @@ body {
     margin: 5% 0;
   }
   #initialsOne {
-    font-size: 100px;
+    font-size: 120px;
   }
-  .container {
+  form {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15%;
   }
-  .projects video {
-    width: 95%;
-    height: 325px;
-    margin: 2% 2%;
-    display: none;
+  .brk-btn {
+    font-size: 21px;
   }
-  .collapsible {
-    padding: 5px;
-    font-size: 28px;
-    margin-bottom: 5%;
+  form {
+    font-size: 21px;
   }
-  .collapsible span {
-    float: right;
-    margin-right: 10px;
+  input {
+    line-height: 32px;
+    padding: 13px 120px 13px 20px;
+    margin-bottom: 3%;
   }
-  .text {
-    font-size: 17px;
-    width: 95%;
-    margin: 3% auto;
-    line-height: 1.5;
-    padding: 3%;
+  input[type="text"],
+  input[type="email"] {
+    font-size: 21px;
   }
-    footer {
+  textarea {
+    height: 250px;
+    width: 450px;
+    margin-bottom: 3%;
+    font-size: 21px;
+    padding: 13px 0 13px 20px;
+  }
+  label {
+    line-height: 1.5em;
+    text-align: center;
+  }
+  footer {
     width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 10px;
+    position: fixed;
+    left: 2%;
+    top: 9%;
   }
   .icons {
     height: 50px;
   }
 }
-
 /* Desktop */
 @media only screen and (min-device-width: 1025px) {
   #wrapper {
-    margin: 3% 0;
+    margin: 5% 0 5% 75%;
+  }
+  body {
+    overflow: auto;
   }
   #initialsOne {
     font-size: 150px;
   }
-  .container {
-    flex-direction: row;
-    justify-content: space-evenly;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 8%;
   }
-  .projects {
-    width: 45%;
+  .brk-btn {
+    font-size: 25px;
   }
-  .projects video {
-    width: 95%;
-
-    margin: 2% 2%;
-    display: none;
+  form {
+    font-size: 25px;
   }
-  .collapsible {
-    padding: 5px;
-    font-size: 35px;
-    margin-bottom: 5%;
+  input {
+    line-height: 32px;
+    padding: 13px 250px 13px 20px;
+    margin-bottom: 2%;
   }
-  .collapsible span {
-    float: right;
-    margin-right: 10px;
+  input[type="text"],
+  input[type="email"] {
+    font-size: 25px;
   }
-  .text {
-    font-size: 20px;
-    width: 95%;
-    margin: 3% auto;
-    line-height: 1.5;
-    padding: 3%;
+  textarea {
+    height: 250px;
+    width: 584px;
+    margin-bottom: 2%;
+    font-size: 25px;
+    padding: 13px 0 13px 20px;
   }
-    footer {
+  label {
+    line-height: 1.5em;
+    text-align: center;
+  }
+  footer {
     width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 10px;
+    position: fixed;
+    left: 2%;
+    top: 9%;
   }
   .icons {
-    height: 85px;
-  }
-}
-
-/* Animations */
-.slide-in-right {
-  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2019-12-24 19:10:49
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info.
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation slide-in-right
- * ----------------------------------------
- */
-@-webkit-keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-.slide-in-left {
-  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-/* ----------------------------------------------
- * Generated by Animista on 2019-12-24 19:12:2
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info.
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation slide-in-left
- * ----------------------------------------
- */
-@-webkit-keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
+    height: 60px;
   }
 }

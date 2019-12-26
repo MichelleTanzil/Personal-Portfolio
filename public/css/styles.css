@@ -12,10 +12,15 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: "Noto Sans", sans-serif;
-  overflow: scroll;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+}
+.enter {
+  text-decoration: none;
+  margin: auto;
+  color: white;
+  font-size: 50px;
 }
 
 /* Nav Bar */
@@ -144,11 +149,12 @@ body {
 }
 /* Initials Logo */
 #initialsOne {
-  /* background: -webkit-linear-gradient(#e96443, #904e95); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   text-align: center;
+  font-size: 200px;
+  height: 100%;
   text-shadow: 1px 1px 1px #00d4d4, 1px 2px 1px #00d4d4, 1px 3px 1px #00d4d4,
     1px 4px 1px #00d4d4, 1px 5px 1px #00d4d4, 1px 6px 1px #f62459,
     1px 7px 1px #f62459, 1px 8px 1px #f62459, 1px 9px 1px #f62459,
@@ -201,38 +207,34 @@ body {
 #wrapper {
   line-height: 70px;
   padding: 0;
-  margin: 3% 0 3% 0;
+  margin: 13% 0 3% 0;
   vertical-align: top;
 }
-/* Contact Me Form */
-label {
-  color: #00d4d4;
+.text {
+  color: #5b9ed9;
+  letter-spacing: 0.0625em;
+  word-wrap: break-word;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-input[type="text"],
-input[type="email"] {
-  color: #355c7d;
+.intro {
+  text-align: right;
+  letter-spacing: normal;
+}
+.spacing {
+  padding: 5px;
+}
+.initials {
+  color: #00d4d4;
+  text-shadow: 1px 1px 1px #00d4d4, 1px 2px 1px #00d4d4, 1px 3px 1px #00d4d4,
+    1px 4px 1px #00d4d4, 1px 5px 1px #00d4d4, 1px 6px 1px #f62459,
+    1px 7px 1px #f62459, 1px 8px 1px #f62459, 1px 9px 1px #f62459,
+    1px 10px 1px #f62459, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+  font-size: 100px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  font-family: "Noto Sans", sans-serif;
-}
-input {
-  border-radius: 3px;
-  border: none;
-  outline: none;
-}
-input:focus {
-  border-bottom: 3px solid #3c3c57;
-}
-textarea {
-  border: none;
-  outline: none;
-  color: #355c7d;
-  border-radius: 3px;
-}
 /* Btn - About Me */
 
 .brk-btn {
@@ -276,159 +278,132 @@ textarea {
 .brk-btn:hover::after {
   left: 80%;
 }
+/* Footer/Social Media Icons */
 /* Responsive */
 /* Mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #wrapper {
-    margin: 5% 0;
+    margin: 35% 0 3% 0;
+    padding-bottom: 20%;
   }
-  #initialsOne {
-    font-size: 100px;
-    margin-bottom: 5%;
+  .intro {
+    margin-right: 3%;
+    margin-bottom: 7%;
   }
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 15%;
+  .text {
+    font-size: 17px;
+  }
+  .initials {
+    font-size: 27px;
   }
   .brk-btn {
-    font-size: 15px;
-  }
-  form {
-    font-size: 15px;
-    margin-top: 15%;
-  }
-  input {
-    line-height: 32px;
-    padding: 5px 50px 5px 10px;
-    margin-bottom: 3%;
-  }
-  input[type="text"],
-  input[type="email"] {
-    font-size: 13px;
-  }
-  textarea {
-    height: 100px;
-    width: 228px;
-    margin-bottom: 3%;
-    font-size: 13px;
-    padding: 5px 0 5px 10px;
-  }
-  label {
-    line-height: 1.5em;
-    text-align: center;
+    left: 60%;
+    font-size: 17px;
   }
   footer {
     width: 100%;
-    position: relative;
-    left: 0;
-    bottom: -10px;
+    position: fixed;
+    left: 2%;
+    top: 9%;
   }
   .icons {
-    height: 50px;
+    height: 40px;
   }
 }
 /* Tablet */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
   #wrapper {
-    margin: 5% 0;
+    margin: 15% 0 3% 55%;
+    padding-bottom: 20%;
   }
-  #initialsOne {
-    font-size: 120px;
+  .intro {
+    margin-right: 5%;
+    margin-bottom: 7%;
   }
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 15%;
+  .text {
+    font-size: 27px;
+  }
+  .initials {
+    font-size: 50px;
   }
   .brk-btn {
-    font-size: 21px;
-  }
-  form {
-    font-size: 21px;
-  }
-  input {
-    line-height: 32px;
-    padding: 13px 120px 13px 20px;
-    margin-bottom: 3%;
-  }
-  input[type="text"],
-  input[type="email"] {
-    font-size: 21px;
-  }
-  textarea {
-    height: 250px;
-    width: 450px;
-    margin-bottom: 3%;
-    font-size: 21px;
-    padding: 13px 0 13px 20px;
-  }
-  label {
-    line-height: 1.5em;
-    text-align: center;
+    left: 75%;
+    font-size: 18px;
   }
   footer {
     width: 100%;
-    position: relative;
-    left: 0;
-    bottom: -10px;
+    position: fixed;
+    left: 2%;
+    top: 9%;
   }
   .icons {
     height: 50px;
   }
 }
+
 /* Desktop */
 @media only screen and (min-device-width: 1025px) {
   #wrapper {
-    margin: 5% 0 5% 75%;
+    margin: 10% 0 7% 75%;
   }
-  body {
-    overflow: auto;
+  .intro {
+    margin-right: 3%;
+    margin-bottom: 3%;
   }
-  #initialsOne {
-    font-size: 150px;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 8%;
+  .text {
+    font-size: 50px;
   }
   .brk-btn {
+    left: 85%;
     font-size: 25px;
-  }
-  form {
-    font-size: 25px;
-  }
-  input {
-    line-height: 32px;
-    padding: 13px 250px 13px 20px;
-    margin-bottom: 2%;
-  }
-  input[type="text"],
-  input[type="email"] {
-    font-size: 25px;
-  }
-  textarea {
-    height: 250px;
-    width: 584px;
-    margin-bottom: 2%;
-    font-size: 25px;
-    padding: 13px 0 13px 20px;
-  }
-  label {
-    line-height: 1.5em;
-    text-align: center;
   }
   footer {
     width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 10px;
+    position: fixed;
+    left: 2%;
+    top: 9%;
   }
   .icons {
-    height: 85px;
+    height: 60px;
+  }
+}
+
+/* Text Animation */
+.blink-1 {
+  -webkit-animation: blink-1 2s both;
+  animation: blink-1 2s both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2019-12-24 10:33:55
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation blink-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
   }
 }
