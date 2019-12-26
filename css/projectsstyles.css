@@ -296,6 +296,15 @@ body {
     line-height: 1.5;
     padding: 3%;
   }
+    footer {
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 10px;
+  }
+  .icons {
+    height: 50px;
+  }
 }
 /* Tablet */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
@@ -329,6 +338,15 @@ body {
     margin: 3% auto;
     line-height: 1.5;
     padding: 3%;
+  }
+    footer {
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 10px;
+  }
+  .icons {
+    height: 50px;
   }
 }
 
@@ -368,6 +386,15 @@ body {
     margin: 3% auto;
     line-height: 1.5;
     padding: 3%;
+  }
+    footer {
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 10px;
+  }
+  .icons {
+    height: 85px;
   }
 }
 

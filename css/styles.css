@@ -278,7 +278,7 @@ body {
 .brk-btn:hover::after {
   left: 80%;
 }
-
+/* Footer/Social Media Icons */
 /* Responsive */
 /* Mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -300,15 +300,24 @@ body {
     left: 60%;
     font-size: 17px;
   }
+  footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+  }
+  .icons {
+    height: 50px;
+  }
 }
 /* Tablet */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
   #wrapper {
-    margin: 35% 0 3% 50%;
+    margin: 15% 0 3% 55%;
     padding-bottom: 20%;
   }
   .intro {
-    margin-right: 3%;
+    margin-right: 5%;
     margin-bottom: 7%;
   }
   .text {
@@ -318,8 +327,17 @@ body {
     font-size: 50px;
   }
   .brk-btn {
-    left: 80%;
+    left: 75%;
     font-size: 18px;
+  }
+  footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+  }
+  .icons {
+    height: 50px;
   }
 }
 
@@ -338,6 +356,15 @@ body {
   .brk-btn {
     left: 85%;
     font-size: 25px;
+  }
+  footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+  }
+  .icons {
+    height: 85px;
   }
 }
 

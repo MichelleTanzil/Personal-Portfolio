@@ -319,6 +319,15 @@ textarea {
     line-height: 1.5em;
     text-align: center;
   }
+  footer {
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: -10px;
+  }
+  .icons {
+    height: 50px;
+  }
 }
 /* Tablet */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
@@ -359,6 +368,15 @@ textarea {
   label {
     line-height: 1.5em;
     text-align: center;
+  }
+  footer {
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: -10px;
+  }
+  .icons {
+    height: 50px;
   }
 }
 /* Desktop */
@@ -403,5 +421,14 @@ textarea {
   label {
     line-height: 1.5em;
     text-align: center;
+  }
+  footer {
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 10px;
+  }
+  .icons {
+    height: 85px;
   }
 }

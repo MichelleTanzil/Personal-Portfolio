@@ -471,6 +471,15 @@ body {
     font-size: 100px;
     margin-bottom: 5%;
   }
+  footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+  }
+  .icons {
+    height: 50px;
+  }
 }
 /* Tablet */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
@@ -511,7 +520,7 @@ body {
   }
   .collapsible span {
     float: right;
-    margin-right:8%;
+    margin-right: 8%;
   }
   #portrait {
     display: block;
@@ -523,6 +532,23 @@ body {
   }
   #initialsOne {
     font-size: 120px;
+  }
+  footer {
+    position: fixed;
+    left: 74%;
+    bottom: 25%;
+  }
+  .icons {
+    height: 50px;
+  }
+  footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+  }
+  .icons {
+    height: 50px;
   }
 }
 /* Desktop */
@@ -596,5 +622,14 @@ body {
   }
   #initialsOne {
     font-size: 150px;
+  }
+  footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+  }
+  .icons {
+    height: 85px;
   }
 }
