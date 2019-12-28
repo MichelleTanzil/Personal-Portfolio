@@ -410,6 +410,8 @@ body {
   display: none;
   margin-bottom: 5%;
   background-color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  letter-spacing: 0.1em;
 }
 
 .skills {
