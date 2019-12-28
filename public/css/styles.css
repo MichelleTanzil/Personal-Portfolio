@@ -279,6 +279,9 @@ body {
   left: 80%;
 }
 /* Footer/Social Media Icons */
+.r-text-underline{
+  text-decoration: none;
+}
 /* Responsive */
 /* Mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

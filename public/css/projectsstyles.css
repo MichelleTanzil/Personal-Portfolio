@@ -262,6 +262,9 @@ body {
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.r-text-underline{
+  text-decoration: none;
+}
 /* Responsive */
 /* Mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
