@@ -56,5 +56,38 @@ $(document).ready(function() {
         }
       };
       xhr.send(data);
-    }
+  }
+
+  // Error Ajax side
+  // $("#formBlock").on("submit", function(e) {
+  //   e.preventDefault();
+
+  //   //get the name field value
+  //   var name = $("#name").val();
+  //   //get the name field value
+  //   var email = $("#email").val();
+  //   //get the message
+  //   var message = $("#message").val();
+
+  //   //send to formspree
+  //   $.ajax({
+  //     url: "https://formspree.io/xjvgrldv",
+  //     method: "POST",
+  //     data: {
+  //       name: name,
+  //       email: email,
+  //       message: message
+  //     },
+  //     dataType: "json",
+  //     success: function() {
+  //       console.log("success");
+  //       $("#contactForm").hide();
+  //       $("#thankyouBlock").show();
+  //     },
+  //     error: () => {
+  //       console.log("error")
+  //     }
+  //   });
+  // });
+
 });

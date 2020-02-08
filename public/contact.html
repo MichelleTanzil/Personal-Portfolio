@@ -27,18 +27,24 @@
   <div id="wrapper">
     <div id="initialsOne" class="roll-in-right">MT</div>
   </div>
-  <form action="https://formspree.io/xjvgrldv" method="POST">
-    <label for="sender_name">Name</label>
-    <input type="text" name="sender_name" required>
 
-    <label for="_replyto">Email address</label>
-    <input type="email" name="_replyto" required >
+  <div id="contactForm">
+    <form id="formBlock" action="https://formspree.io/xjvgrldv" method="POST">
+      <label for="name" id="name">Name</label>
+      <input type="text" name="name" required>
 
-    <label for="message">Message</label>
-    <textarea name="message" required></textarea>
+      <label for="email" id="email">Email address</label>
+      <input type="email" name="email" required>
 
-    <button type="submit" class="brk-btn">Send</button>
-  </form>
+      <label for="message" id="message">Message</label>
+      <textarea name="message" required></textarea>
+
+      <button type="submit" class="brk-btn">Send</button>
+    </form>
+  </div>
+
+  <p id="thankYouBlock">Thank you for filling out the form. I care a lot about it.</p>
+
   <footer>
     <a class="r-text-underline" href="https://www.linkedin.com/in/michelletanzil/" target="_blank">
       <img class="icons" src="images/iconfinder_linkedin-hexagon-gloss-social-media_764735.png"

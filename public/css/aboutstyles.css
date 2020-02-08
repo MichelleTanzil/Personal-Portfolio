@@ -402,7 +402,19 @@ body {
   font-family: "Pacifico", cursive;
   color: #355c7d;
   text-align: center;
+  background-color: #0c0c18;
 }
+.contri {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#chart {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .text {
   font-family: "Roboto", sans-serif;
   border-radius: 2px;
@@ -487,6 +499,12 @@ body {
     height: 30px;
     margin-right: 8%;
   }
+  .contri {
+    width: 100%;
+  }
+  #chart {
+    width: 100%;
+  }
 }
 /* Tablet */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
@@ -551,6 +569,12 @@ body {
     height: 40px;
     margin-bottom: 7%;
   }
+  .contri {
+    width: 100%;
+  }
+  #chart {
+    width: 100%;
+  }
 }
 /* Desktop */
 @media only screen and (min-device-width: 1025px) {
@@ -613,7 +637,7 @@ body {
     margin-left: 5%;
   }
   .titles {
-    font-size: 50px;
+    font-size: 45px;
   }
   .container {
     height: 100px;
@@ -634,5 +658,13 @@ body {
   .icons {
     height: 50px;
     margin-bottom: 12%;
+  }
+  .contri {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #chart {
+    width: 85%;
   }
 }
