@@ -282,7 +282,11 @@ textarea {
 
 #thankYouBlock {
   display: none;
-  color: #355c7d;
+  color: #5b9ed9;
+  float: right;
+  margin-top: 15%;
+  margin-right: 3%;
+  text-align: right;
 }
 /* Responsive */
 /* Mobile */

@@ -29,21 +29,23 @@
   </div>
 
   <div id="contactForm">
-    <form id="formBlock" action="https://formspree.io/xjvgrldv" method="POST">
-      <label for="name" id="name">Name</label>
-      <input type="text" name="name" required>
+    <form id="formBlock" method="POST" action="https://formspree.io/xjvgrldv">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
 
-      <label for="email" id="email">Email address</label>
-      <input type="email" name="email" required>
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" required>
 
-      <label for="message" id="message">Message</label>
-      <textarea name="message" required></textarea>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" required></textarea>
 
       <button type="submit" class="brk-btn">Send</button>
     </form>
   </div>
-
-  <p id="thankYouBlock">Thank you for filling out the form. I care a lot about it.</p>
+<div id="thankYouBlock">
+  <p>Thank you for filling out the form!</p>
+  <p>I care a lot about it and I will get back to you shortly.</p>
+</div>
 
   <footer>
     <a class="r-text-underline" href="https://www.linkedin.com/in/michelletanzil/" target="_blank">
