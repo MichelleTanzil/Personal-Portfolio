@@ -413,6 +413,7 @@ body {
 #chart {
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.5);
+  object-fit: contain;
 }
 
 .text {
@@ -665,6 +666,6 @@ body {
   }
 
   #chart {
-    width: 85%;
+    width: 100%;
   }
 }

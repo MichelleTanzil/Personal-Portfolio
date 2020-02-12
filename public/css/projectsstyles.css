@@ -267,12 +267,16 @@ body {
 .r-text-underline {
   text-decoration: none;
 }
-.github-icon {
-  width: 35px;
-}
-.tech{
+
+.mt-2 {
   margin-top: 2%;
 }
+
+.tech,
+.tech-tower {
+  display: grid;
+}
+
 /* Responsive */
 /* Mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -306,6 +310,7 @@ body {
     margin: 3% auto;
     line-height: 1.5;
     padding: 3%;
+    flex-direction: column;
   }
   footer {
     position: fixed;
@@ -317,6 +322,29 @@ body {
   .icons {
     height: 30px;
     margin-right: 8%;
+  }
+  .github-icon {
+    width: 35px;
+  }
+  .tech {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tech-tower {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tech img {
+    width: 60%;
+    margin: 0 auto;
+    align-self: center;
+  }
+  .tech-tower img {
+    width: 45%;
+    margin: 0 auto;
+    align-self: center;
+  }
+  .txt-title {
+    font-size: 16px;
+    color: #4f5b62;
   }
 }
 /* Tablet */
@@ -351,6 +379,7 @@ body {
     margin: 3% auto;
     line-height: 1.5;
     padding: 3%;
+    flex-direction: column;
   }
   footer {
     display: flex;
@@ -362,6 +391,29 @@ body {
   .icons {
     height: 40px;
     margin-bottom: 7%;
+  }
+  .github-icon {
+    width: 45px;
+  }
+  .tech {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .tech-tower {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tech img {
+    width: 40%;
+    margin: 0 auto;
+    align-self: center;
+  }
+  .tech-tower img {
+    width: 20%;
+    margin: 0 auto;
+    align-self: center;
+  }
+  .txt-title {
+    font-size: 16px;
+    color: #4f5b62;
   }
 }
 
@@ -412,6 +464,29 @@ body {
   .icons {
     height: 50px;
     margin-bottom: 12%;
+  }
+  .github-icon {
+    width: 53px;
+  }
+  .tech {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .tech-tower {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tech img {
+    width: 80%;
+    margin: 0 auto;
+    align-self: center;
+  }
+    .tech-tower img {
+    width: 35%;
+    margin: 0 auto;
+    align-self: center;
+  }
+  .txt-title {
+    font-size: 16px;
+    color: #4f5b62;
   }
 }
 
