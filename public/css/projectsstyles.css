@@ -272,6 +272,10 @@ body {
   margin-top: 2%;
 }
 
+.mb-2 {
+  margin-bottom: 2%;
+}
+
 .tech,
 .tech-tower {
   display: grid;
@@ -345,6 +349,7 @@ body {
   .txt-title {
     font-size: 16px;
     color: #4f5b62;
+    padding: 2% 0;
   }
 }
 /* Tablet */
@@ -414,6 +419,7 @@ body {
   .txt-title {
     font-size: 16px;
     color: #4f5b62;
+    padding: 2% 0;
   }
 }
 
@@ -479,7 +485,7 @@ body {
     margin: 0 auto;
     align-self: center;
   }
-    .tech-tower img {
+  .tech-tower img {
     width: 35%;
     margin: 0 auto;
     align-self: center;
@@ -487,6 +493,7 @@ body {
   .txt-title {
     font-size: 16px;
     color: #4f5b62;
+    padding: 2% 0;
   }
 }
 
