@@ -281,6 +281,11 @@ body {
   display: grid;
 }
 
+.split-half{
+  display: inline-block;
+  width: 49%;
+}
+
 /* Responsive */
 /* Mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -491,7 +496,7 @@ body {
     align-self: center;
   }
   .txt-title {
-    font-size: 16px;
+    font-size: 20px;
     color: #4f5b62;
     padding: 2% 0;
   }
